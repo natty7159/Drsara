@@ -1,16 +1,42 @@
+var pageindex=1;
 var slideindex=1;
+
 showSlides(slideindex);
-
-
+showPage(pageindex)
 
 function plusSlides(n){
     
     showSlides(slideindex += 1);
 }
 
-function currentText(n){
-    showSlides(slideindex=n);
+
+function changePage(n){
+    showPage(pageindex=+n);
 }
+
+
+
+
+
+function showPage(n){
+    var pages = document.getElementsByClassName("navigotors");
+    if (n > pages.length){pageindex=1}
+    if (n < 1) {pageindex=pages.length}
+
+   
+    for (let i = 0; i < pages.length; i++) {
+        pages[i].style.display='none';    
+    }
+    pages[pageindex-1].style.display='flex';
+    console.log(pages[pageindex-1]);
+    
+    
+    
+}
+
+
+
+
 
 
 
@@ -36,5 +62,6 @@ function showSlides(n){
     slides[slideindex - 1 ].style.display='block';
     numbers[slideindex - 1 ].style.display='block';
     texts[slideindex- 1].style.display='block';
+    
 
 }

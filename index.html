@@ -67,22 +67,19 @@
 
         </section>
 
-
-
-
         <section class="nav">   
             <ul class="nav-items">
-                <li>  <a href="#home">  Home   </a>  </li>
-                <li> <a href="#"> About</a></li>
-                <li><a href="#"> Services</a> </li>
-                <li><a href="#"> About </a> </li>
+                <li>  <a href="/">  Home   </a>  </li>
+                <li> <a onclick="changePage(2)"> About</a></li>
+                <li><a onclick="changePage(3)"> Services</a> </li>
+                <li><a onclick="changePage(4)"> Team</a> </li>
                 <li> <a href="#"> Reviews </a> </li>
                 <li> <a href="#">Contact</a> </li>
             
             </ul>
         </section>
         <section class="main">
-            <div class="hero">
+            <div class="hero navigotors ">
                 <div class="main-text">
                     <h3 class="main-text_number animated bounceIn">
                         01
@@ -131,13 +128,13 @@
                     </div>
 
                     <div class="slider-wrapper">
-                        <div class="next">
-                            <a onclick="plusSlides(1)"><i class="fa fa-chevron-left"></i></a>
+                        <div class="next" onclick="plusSlides(1)">
+                            <a ><i class="fa fa-chevron-left"></i></a>
                             
                         </div>
-                        <div class="prev">
+                        <div class="prev" onclick="plusSlides(-1)">
                             
-                            <a  onclick="plusSlides(-1)"><i class="fa fa-chevron-right"></i> </a> 
+                            <a  ><i class="fa fa-chevron-right"></i> </a> 
                         </div>
                     </div>
                 </div>
@@ -199,34 +196,131 @@
 
 
             </div>
-            <!-- <div class="aboutus">
-                <div class="aboutus_pattern">
-                    <div class="aboutus_image">
-
-                    </div>
-
+            <div class="aboutus navigotors  ">
+                <div class="aboutus_image ">
+                    
                 </div>
-                <div class="aboutus_text">
-                    <h2 class="aboutus_text-headline">
-                        Our <span>Mission</span>
-                    </h2>
+                <div class="aboutus_text animated bounceIn">
+                    <h1 class="aboutus_text_headline">
+                        About <span class="aboutus_text_headline_yellow">
+                            US
+                        </span> 
+                    </h1>
                     <div class="aboutus_text_underline">
 
                     </div>
-                    <p class="frist">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fuga dolores? Officiis earum et 
-                        necessitatibus tempore maiores. Quia quam quis libero saepe, quasi, voluptatum perferendis, 
-                        error qui similique nam eos!
-                    </p>
-                    <p class="second">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fuga dolores? Officiis earum et 
-                        necessitatibus tempore maiores. Quia quam quis libero saepe, quasi, voluptatum perferendis, 
-                        error qui similique nam eos!
-                    </p>
+                    <span class="aboutus_text_frist">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia amet temporibus repudiandae ratione 
+                        voluptatibus tempora. Vero, est molestiae hic distinctio culpa enim, atque nemo corrupti laboriosam 
+                        possimus cum eius. Iste.
+                      
+                    </span>
+                    <span class="aboutus_text_second">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia amet temporibus repudiandae ratione 
+                        voluptatibus tempora. Vero, est molestiae hic distinctio culpa enim, atque nemo corrupti laboriosam 
+                        possimus cum eius. Iste.
+                      
+                    </span>
+                    <div class="aboutus_text_btn">
+                        <button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="Learn More">
+                            <span>L</span><span>E</span><span>A</span><span>R</span><span>N </span> <span>M</span><span>O</span><span>R</span><span>E</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
-           
-         -->
+            <div class="services navigotors animated bounceIn">
+             <h1 class="services_headline">Our <span> Services</span></h1>
+
+             <div class="service-1">
+                 <div class="shapes">
+                     <div class="shape-1 right">    </div>
+                     <div class="shape-2 right">    </div>
+                     <div class="shape-3 right">    </div>
+                 </div>
+
+                 <div class="img">
+                    <img src="img/1.svg" alt="">
+                 </div>
+                 <div class="description">
+                     <h2 class="description_h2">Teeth whitening</h2>
+                     <p class="description_p">Lorem ipsum dolor sit amet consectetur adipisicing elit at quidem.</p>
+                 </div>
+                 <div class="shapes">
+                     <div class="shape-4"></div>
+                     <div class="shape-5"></div>
+                     <div class="shape-6"></div>
+                 </div>
+             </div>
+             <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right">    </div>
+                    <div class="shape-2 right">    </div>
+                    <div class="shape-3 right">    </div>
+                </div>
+
+                <div class="img">
+                   <img src="img/2.svg" alt="">
+                </div>
+                <div class="description">
+                    <h2 class="description_h2">Teeth whitening</h2>
+                    <p class="description_p">Lorem ipsum dolor sit amet consectetur adipisicing elit at quidem.</p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4"></div>
+                    <div class="shape-5"></div>
+                    <div class="shape-6"></div>
+                </div>
+            </div>
+            <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right">    </div>
+                    <div class="shape-2 right">    </div>
+                    <div class="shape-3 right">    </div>
+                </div>
+
+                <div class="img">
+                   <img src="img/3.svg" alt="">
+                </div>
+                <div class="description">
+                    <h2 class="description_h2">Teeth whitening</h2>
+                    <p class="description_p">Lorem ipsum dolor sit amet consectetur adipisicing elit at quidem.</p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4"></div>
+                    <div class="shape-5"></div>
+                    <div class="shape-6"></div>
+                </div>
+            </div>
+            <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right">    </div>
+                    <div class="shape-2 right">    </div>
+                    <div class="shape-3 right">    </div>
+                </div>
+
+                <div class="img">
+                   <img src="img/1.svg" alt="">
+                </div>
+                <div class="description">
+                    <h2 class="description_h2">Teeth whitening</h2>
+                     <p class="description_p">Lorem ipsum dolor sit amet consectetur adipisicing elit at quidem.</p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4"></div>
+                    <div class="shape-5"></div>
+                    <div class="shape-6"></div>
+                </div>
+            </div>
+
+            </div>
+            <div class="team navigotors animated bounceIn">
+                <h1 class="team_headline">Our <span>Team</span> </h1>
+            </div>
+
+
+          
+ 
         
         
         
