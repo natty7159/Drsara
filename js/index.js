@@ -28,7 +28,9 @@ function showPage(n){
         pages[i].style.display='none';    
     }
     pages[pageindex-1].style.display='flex';
-    console.log(pages[pageindex-1]);
+    if (n == 5){
+        $('.num').counterUp({delay:5, time:1700});
+    }
     
     
     
